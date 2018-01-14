@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PublicLibrary</string>
+    <string name="record">按住進行錄音</string>
+    <string name="play">播放錄音</string>
+    <string name="str_no_data_title">抱歉，暫無內容</string>
+    <string name="str_no_data_content">服務人員比較懶，什麼都沒留下</string>
+    <string name="str_no_net_title">網絡出現問題啦～</string>
+    <string name="str_no_net_content">網絡或服務器出問題，重繪試試吧</string>
+    <string name="str_refresh">刷新試一試</string>
+    <string name="str_refresh_s">刷新</string>
+    <string name="str_wan">萬</string>
+</resources>

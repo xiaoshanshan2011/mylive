@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dadashen.iml" filepath="$PROJECT_DIR$/../dadashen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../greendaolib/greendaolib.iml" filepath="$PROJECT_DIR$/../greendaolib/greendaolib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../indexlib/indexlib.iml" filepath="$PROJECT_DIR$/../indexlib/indexlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nicevideoplayer/nicevideoplayer.iml" filepath="$PROJECT_DIR$/../nicevideoplayer/nicevideoplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publiclibrary.iml" filepath="$PROJECT_DIR$/publiclibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pulltonextlayout/pulltonextlayout.iml" filepath="$PROJECT_DIR$/../pulltonextlayout/pulltonextlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../scancodelibrary/scancodelibrary.iml" filepath="$PROJECT_DIR$/../scancodelibrary/scancodelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sharelibrary/sharelibrary.iml" filepath="$PROJECT_DIR$/../sharelibrary/sharelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../signalr-client-sdk/signalr-client-sdk.iml" filepath="$PROJECT_DIR$/../signalr-client-sdk/signalr-client-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../signalr-client-sdk-android/signalr-client-sdk-android.iml" filepath="$PROJECT_DIR$/../signalr-client-sdk-android/signalr-client-sdk-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/../xrecyclerview/xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

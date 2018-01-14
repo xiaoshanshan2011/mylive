@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+def time() {
+    return new Date().format("yyyyMMdd_HH_mm", TimeZone.getDefault())
+}
+
+android {
+    compileSdkVersion 25
+    defaultConfig {
+        applicationId "com.alishan.live"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "Pub_V${defaultConfig.versionName}_${time()}.apk"
+                }
+            }
+        }
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'live'
+            keyPassword 'live123'
+            storeFile file('../app/src/main/key/live.jks')
+            storePassword 'live123'
+        }
+        release {
+            keyAlias 'live'
+            keyPassword 'live123'
+            storeFile file('../app/src/main/key/live.jks')
+            storePassword 'live123'
+        }
+        debug {
+            keyAlias 'live'
+            keyPassword 'live123'
+            storeFile file('../app/src/main/key/live.jks')
+            storePassword 'live123'
+        }
+    }
+
+    //设置databinding
+    dataBinding {
+        enabled = true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            jniLibs.srcDir 'libs'
+        }
+    }
+}
+
+dependencies {
+    provided fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':netlibrary')
+    implementation project(':lib-zxing')
+
+    // 基础模块
+    compile 'com.netease.nimlib:basesdk:3.3.0'
+    // 音视频模块(版本号必须和基础模块一样)
+    compile 'com.netease.nimlib:avchat:3.3.0'
+}

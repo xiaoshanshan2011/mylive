@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputView">
+        <attr name="textColor_tv" format="color" />
+        <attr name="textColor_et" format="color" />
+
+        <attr name="textColorHint_tv" format="color" />
+        <attr name="textColorHint_et" format="color" />
+
+        <attr name="size_tv" format="integer" />
+        <attr name="size_et" format="integer" />
+
+        <attr name="text_tv" format="string" />
+        <attr name="text_et" format="string" />
+
+        <attr name="textHint_tv" format="string" />
+        <attr name="textHint_et" format="string" />
+
+        <attr name="src_iv" format="integer" />
+
+        <attr name="background_ll" format="color" />
+        <attr name="background_et" format="color" />
+        <attr name="background_iv" format="color" />
+        <attr name="background_tv" format="color" />
+
+        <attr name="visibility_iv" format="boolean" />
+        <attr name="visibility_et" format="boolean" />
+
+        <attr name="enabled" format="boolean" />
+
+        <attr name="isdivider" format="boolean" />
+
+        <attr name="tv_gravity" format="integer" />
+        <attr name="et_gravity" format="integer" />
+
+    </declare-styleable>
+    <declare-styleable name="InputLineView">
+        <attr name="line_textColor_tv" format="color" />
+        <attr name="line_textColor_et" format="color" />
+
+        <attr name="line_textColorHint_tv" format="color" />
+        <attr name="line_textColorHint_et" format="color" />
+
+        <attr name="line_size_tv" format="integer" />
+        <attr name="line_size_et" format="integer" />
+
+        <attr name="line_text_tv" format="string" />
+        <attr name="line_text_et" format="string" />
+
+        <attr name="line_textHint_tv" format="string" />
+        <attr name="line_textHint_et" format="string" />
+
+        <attr name="line_src_iv" format="integer" />
+
+        <attr name="line_background_ll" format="color" />
+        <attr name="line_background_et" format="color" />
+        <attr name="line_background_iv" format="color" />
+        <attr name="line_background_tv" format="color" />
+
+        <attr name="line_visibility_iv" format="boolean" />
+        <attr name="line_visibility_et" format="boolean" />
+
+        <attr name="line_enabled" format="boolean" />
+
+        <attr name="line_isdivider" format="boolean" />
+
+        <attr name="line_tv_gravity" format="integer" />
+        <attr name="line_et_gravity" format="integer" />
+        <attr name="input_style" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ItemImageTextStyleable">
+        <attr name="item_text" format="string" />
+        <attr name="item_color" format="integer" />
+        <attr name="item_size" format="integer" />
+        <attr name="item_image" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="hprogress">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progressHeight" format="integer" />
+        <attr name="progressColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="JessonTextColorOn" format="color" />
+        <attr name="JessonTextColorOff" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ZLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="maxLines" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleProgress">
+        <attr name="color1" format="reference|color" />
+        <attr name="color2" format="reference|color" />
+        <attr name="color3" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelView">
+        <attr name="unitHeight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="selectedTextSize" format="dimension" />
+
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+
+        <attr name="maskHeight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AutoVerticalScrollTextView">
+        <attr name="textColor" format="color" />
+        <attr name="textColorSize" format="dimension" />
+    </declare-styleable>
+</resources>

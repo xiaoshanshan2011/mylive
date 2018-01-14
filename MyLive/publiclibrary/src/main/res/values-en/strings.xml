@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PublicLibrary</string>
+    <string name = "record"> press and hold to record </string>
+    <string name = "play"> play recording </string>
+    <string name = "str_no_data_title"> Sorry, no content </string>
+    <string name = "str_no_data_content"> service personnel are lazy, nothing left </string>
+    <string name = "str_no_net_title"> network problems ~ </string>
+    <string name = "str_no_net_content"> network or server problems, refresh try it </string>
+    <string name="str_refresh">try to refresh</string>
+    <string name="str_refresh_s">refresh</string>
+    <string name="str_wan">million</string>
+</resources>
