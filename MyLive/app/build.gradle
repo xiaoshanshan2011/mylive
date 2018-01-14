@@ -73,9 +73,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':netlibrary')
     implementation project(':lib-zxing')
-
-    // 基础模块
-    compile 'com.netease.nimlib:basesdk:3.3.0'
-    // 音视频模块(版本号必须和基础模块一样)
-    compile 'com.netease.nimlib:avchat:3.3.0'
 }

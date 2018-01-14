@@ -8,6 +8,7 @@ import com.junshan.pub.utils.TimeUtils;
 import java.io.EOFException;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.util.Date;
 
 import okhttp3.Headers;
 import okhttp3.Interceptor;
@@ -28,7 +29,24 @@ public class HttpInterceptor implements Interceptor {
 
     @Override
     public Response intercept(Chain chain) throws IOException {
-        Request request = chain.request();
+        // 设置请求的header
+        /*httpPost.addHeader("AppKey", appKey);
+        httpPost.addHeader("Nonce", nonce);
+        httpPost.addHeader("CurTime", curTime);
+        httpPost.addHeader("CheckSum", checkSum);
+        httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");*/
+        String appKey = "f4469208649b5102ceace8ddcd41f3a6";
+        String appSecret = "8cae52aea970";
+        String nonce =  "12345";
+        String curTime = String.valueOf((new Date()).getTime() / 1000L);
+        String checkSum = CheckSumBuilder.getCheckSum(appSecret, nonce ,curTime);//参考 计算CheckSum的java代码
+        Request request = chain.request().newBuilder()
+                .addHeader("AppKey",appKey)
+                .addHeader("Nonce",nonce)
+                .addHeader("CurTime",curTime)
+                .addHeader("CheckSum",checkSum)
+                .addHeader("Content-Type","application/x-www-form-urlencoded;charset=utf-8")
+                .build();
         Response response = chain.proceed(request);
         ResponseBody responseBody = response.body();
         long contentLength = responseBody.contentLength();

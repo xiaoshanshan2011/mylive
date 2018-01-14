@@ -19,6 +19,9 @@ import com.netease.nimlib.sdk.auth.AuthService;
 import com.netease.nimlib.sdk.auth.LoginInfo;
 import com.shan.netlibrary.net.BaseBean;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 登录
  * Created by chenjunshan on 2018-01-14.
@@ -84,7 +87,12 @@ public class LoginActivity extends BaseActivity<FgLoginLayoutBinding, Object> im
             return;
         }
 
-        String token = String.valueOf(System.currentTimeMillis());
+        String token = "06a768b483c50b212d49b23687074c14";
+
+        /*Map<String,String> map = new HashMap<>();
+        map.put("accid",user);
+        presenter.usercreateaction(map);*/
+
 
         LoginInfo info = new LoginInfo(user, token); // config...
         RequestCallback<LoginInfo> callback =

@@ -25,7 +25,7 @@ public class AppParams {
      */
     public static Map<String, String> getParams(Map<String, String> map) {
         try {
-            return null;
+            return map;
         } catch (Exception e) {
             e.printStackTrace();
             return new HashMap<>();
